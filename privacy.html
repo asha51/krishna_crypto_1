@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | Krishna Crypto</title>
+  <meta name="description" content="Privacy Policy — How Krishna Crypto collects, uses, and protects your personal information. We never sell or share your data." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0a0e17;
+      --bg-2: #10162a;
+      --card: #141b2e;
+      --border: rgba(255, 255, 255, 0.08);
+      --text: #eef2ff;
+      --muted: #9aa6c4;
+      --brand: #f7b500;
+      --brand-2: #ffd54a;
+      --accent: #6c5ce7;
+      --accent-2: #00d1b2;
+      --radius: 18px;
+      --shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Poppins', 'Noto Sans Devanagari', system-ui, sans-serif;
+      background: var(--bg); color: var(--text); line-height: 1.65; overflow-x: hidden;
+    }
+    a { text-decoration: none; color: inherit; }
+    .container { width: 100%; max-width: 900px; margin: 0 auto; padding: 0 22px; }
+
+    .glow {
+      position: fixed; inset: 0; z-index: -1; pointer-events: none;
+      background:
+        radial-gradient(600px 400px at 15% 5%, rgba(108, 92, 231, 0.18), transparent 60%),
+        radial-gradient(700px 500px at 90% 10%, rgba(247, 181, 0, 0.14), transparent 60%),
+        radial-gradient(600px 600px at 50% 100%, rgba(0, 209, 178, 0.10), transparent 60%);
+    }
+
+    /* ===== Navbar ===== */
+    header {
+      position: sticky; top: 0; z-index: 50;
+      backdrop-filter: blur(14px);
+      background: rgba(10, 14, 23, 0.72);
+      border-bottom: 1px solid var(--border);
+    }
+    nav { display: flex; align-items: center; justify-content: space-between; height: 68px; max-width: 1140px; margin: 0 auto; padding: 0 22px; }
+    .logo { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.15rem; letter-spacing: 0.3px; }
+    .logo img {
+      height: 42px; width: auto; border-radius: 10px; display: block;
+      background: #fff; padding: 3px; box-shadow: 0 6px 20px rgba(247, 181, 0, 0.25);
+    }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 11px 20px; border-radius: 999px; font-weight: 600; font-size: 0.92rem;
+      cursor: pointer; border: none; transition: transform .18s ease, box-shadow .18s ease;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color: #1a1300; box-shadow: 0 10px 30px rgba(247, 181, 0, 0.35);
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 40px rgba(247, 181, 0, 0.5); }
+
+    /* ===== Page head ===== */
+    .page-head { padding: 60px 0 30px; text-align: center; }
+    .page-head .eyebrow { color: var(--accent-2); font-weight: 600; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase; }
+    .page-head h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; margin: 10px 0 12px; letter-spacing: -0.5px; }
+    .page-head p { color: var(--muted); max-width: 560px; margin: 0 auto; }
+    .updated { display: inline-block; margin-top: 14px; font-size: 0.8rem; color: var(--muted); padding: 6px 14px; border-radius: 999px; background: rgba(255,255,255,0.04); border: 1px solid var(--border); }
+
+    /* ===== Policy content ===== */
+    .policy-wrap { padding-bottom: 70px; }
+    .policy {
+      background: linear-gradient(160deg, rgba(108,92,231,0.06), var(--card));
+      border: 1px solid var(--border);
+      border-radius: 24px; padding: 34px; box-shadow: var(--shadow); font-size: 0.95rem; color: var(--muted);
+    }
+    .policy .intro { font-size: 1rem; color: var(--text); line-height: 1.6; margin-bottom: 8px; }
+    .policy section { padding: 22px 0; border-top: 1px solid var(--border); }
+    .policy section:first-of-type { border-top: none; padding-top: 14px; }
+    .policy h2 {
+      display: flex; align-items: center; gap: 10px; color: var(--text);
+      font-size: 1.1rem; font-weight: 700; margin-bottom: 12px;
+    }
+    .policy h2 .ico {
+      width: 32px; height: 32px; border-radius: 9px; display: grid; place-items: center; font-size: 1rem;
+      background: rgba(247,181,0,0.12); border: 1px solid rgba(247,181,0,0.22);
+    }
+    .policy p { line-height: 1.6; margin-bottom: 10px; }
+    .policy p:last-child { margin-bottom: 0; }
+    .policy b { color: var(--text); }
+    .policy ul { list-style: none; display: grid; gap: 10px; margin: 6px 0; }
+    .policy li { display: flex; align-items: flex-start; gap: 10px; line-height: 1.55; }
+    .policy li::before { content: "✓"; color: var(--accent-2); font-weight: 700; flex-shrink: 0; }
+
+    .contact-cta { display: inline-flex; margin-top: 6px; }
+
+    .back-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 28px; color: var(--brand); font-weight: 600; font-size: 0.92rem; }
+    .back-link:hover { color: var(--brand-2); }
+
+    /* ===== Footer ===== */
+    footer { border-top: 1px solid var(--border); padding: 34px 0; background: var(--bg-2); }
+    .copyright { text-align: center; color: var(--muted); font-size: 0.82rem; }
+  </style>
+</head>
+<body>
+  <div class="glow"></div>
+
+  <!-- ===== Navbar ===== -->
+  <header>
+    <nav>
+      <a href="index.html" class="logo"><img src="assets/logo.jpg" alt="Krishna Crypto logo" /></a>
+      <a href="index.html" class="btn btn-primary">← Back to Home</a>
+    </nav>
+  </header>
+
+  <!-- ===== Page head ===== -->
+  <div class="container page-head">
+    <div class="eyebrow">Your Privacy Matters</div>
+    <h1>Privacy Policy</h1>
+    <p>We respect your privacy and are committed to protecting your personal information.</p>
+    <span class="updated">Last updated: July 2026</span>
+  </div>
+
+  <!-- ===== Policy content ===== -->
+  <div class="container policy-wrap">
+    <div class="policy">
+
+      <section>
+        <h2><span class="ico">📋</span> Information We Collect</h2>
+        <p>We may collect basic information such as your name, email address, or phone number only when you voluntarily provide it through forms, registrations, or interactions on our website.</p>
+        <p>We may also collect non-personal data such as browser type, device information, and website usage to improve user experience.</p>
+      </section>
+
+      <section>
+        <h2><span class="ico">⚙️</span> How We Use Your Information</h2>
+        <p>We use your information only for the following purposes:</p>
+        <ul>
+          <li>To provide educational content and updates</li>
+          <li>To improve our website and user experience</li>
+          <li>To respond to your queries or requests</li>
+          <li>To share relevant information related to our services</li>
+        </ul>
+        <p>We do <b>not</b> use your data for misleading or unauthorized purposes.</p>
+      </section>
+
+      <section>
+        <h2><span class="ico">🔒</span> Data Protection</h2>
+        <p>We take appropriate measures to protect your personal information.</p>
+        <p>We do <b>not</b> sell, rent, or share your personal data with third parties.</p>
+        <p>Your information is handled securely and responsibly.</p>
+      </section>
+
+      <section>
+        <h2><span class="ico">🍪</span> Use of Cookies</h2>
+        <p>Our website may use cookies to enhance user experience and analyze website traffic.</p>
+        <p>You can choose to disable cookies through your browser settings.</p>
+      </section>
+
+      <section>
+        <h2><span class="ico">🔗</span> External Links</h2>
+        <p>Our website may contain links to external platforms such as Telegram or other third-party websites.</p>
+        <p>We are not responsible for the content, policies, or practices of these external platforms.</p>
+      </section>
+
+      <section>
+        <h2><span class="ico">⚠️</span> Educational Disclaimer</h2>
+        <p>All content provided on this website and associated platforms is for educational and informational purposes only.</p>
+        <p>We do <b>not</b> provide investment advice, trading recommendations, portfolio management, or guaranteed outcomes.</p>
+        <p>Financial markets, including crypto and gold, involve risk. Users should do their own research before making any financial decisions.</p>
+      </section>
+
+      <section>
+        <h2><span class="ico">🙋</span> User Responsibility</h2>
+        <p>By using this website, you agree that you are responsible for your own decisions and actions based on the information provided.</p>
+      </section>
+
+      <section>
+        <h2><span class="ico">🔄</span> Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Any changes will be updated on this page.</p>
+      </section>
+
+      <section>
+        <h2><span class="ico">✉️</span> Contact Us</h2>
+        <p>If you have any questions regarding this Privacy Policy, you can contact us through our website.</p>
+        <a href="index.html#join" class="btn btn-primary contact-cta">Get in Touch →</a>
+      </section>
+
+    </div>
+    <a href="index.html" class="back-link">← Back to Home</a>
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="container">
+      <div class="copyright">© 2026 Krishna Crypto. All rights reserved. • For educational purposes only.</div>
+    </div>
+  </footer>
+</body>
+</html>

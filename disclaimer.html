@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Disclaimer | Krishna Crypto</title>
+  <meta name="description" content="Disclaimer — Krishna Crypto is a free educational community. No investment advice, no tips, no signals. For learning purposes only." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0a0e17;
+      --bg-2: #10162a;
+      --card: #141b2e;
+      --border: rgba(255, 255, 255, 0.08);
+      --text: #eef2ff;
+      --muted: #9aa6c4;
+      --brand: #f7b500;
+      --brand-2: #ffd54a;
+      --accent: #6c5ce7;
+      --accent-2: #00d1b2;
+      --red: #ef4444;
+      --radius: 18px;
+      --shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Poppins', 'Noto Sans Devanagari', system-ui, sans-serif;
+      background: var(--bg); color: var(--text); line-height: 1.65; overflow-x: hidden;
+    }
+    a { text-decoration: none; color: inherit; }
+    .container { width: 100%; max-width: 900px; margin: 0 auto; padding: 0 22px; }
+
+    .glow {
+      position: fixed; inset: 0; z-index: -1; pointer-events: none;
+      background:
+        radial-gradient(600px 400px at 15% 5%, rgba(108, 92, 231, 0.18), transparent 60%),
+        radial-gradient(700px 500px at 90% 10%, rgba(247, 181, 0, 0.14), transparent 60%),
+        radial-gradient(600px 600px at 50% 100%, rgba(0, 209, 178, 0.10), transparent 60%);
+    }
+
+    /* ===== Navbar ===== */
+    header {
+      position: sticky; top: 0; z-index: 50;
+      backdrop-filter: blur(14px);
+      background: rgba(10, 14, 23, 0.72);
+      border-bottom: 1px solid var(--border);
+    }
+    nav { display: flex; align-items: center; justify-content: space-between; height: 68px; max-width: 1140px; margin: 0 auto; padding: 0 22px; }
+    .logo { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.15rem; letter-spacing: 0.3px; }
+    .logo img {
+      height: 42px; width: auto; border-radius: 10px; display: block;
+      background: #fff; padding: 3px; box-shadow: 0 6px 20px rgba(247, 181, 0, 0.25);
+    }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 11px 20px; border-radius: 999px; font-weight: 600; font-size: 0.92rem;
+      cursor: pointer; border: none; transition: transform .18s ease, box-shadow .18s ease;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color: #1a1300; box-shadow: 0 10px 30px rgba(247, 181, 0, 0.35);
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 40px rgba(247, 181, 0, 0.5); }
+
+    /* ===== Page head ===== */
+    .page-head { padding: 60px 0 30px; text-align: center; }
+    .page-head .eyebrow { color: var(--accent-2); font-weight: 600; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase; }
+    .page-head h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; margin: 10px 0 12px; letter-spacing: -0.5px; }
+    .page-head p { color: var(--muted); max-width: 560px; margin: 0 auto; }
+    .updated { display: inline-block; margin-top: 14px; font-size: 0.8rem; color: var(--muted); padding: 6px 14px; border-radius: 999px; background: rgba(255,255,255,0.04); border: 1px solid var(--border); }
+
+    /* ===== Disclaimer card ===== */
+    .disclaimer-wrap { padding-bottom: 70px; }
+    .disclaimer {
+      background: linear-gradient(160deg, rgba(239,68,68,0.06), var(--card));
+      border: 1px solid rgba(239,68,68,0.2);
+      border-radius: 24px; padding: 34px; box-shadow: var(--shadow); font-size: 0.95rem; color: var(--muted);
+    }
+    .disclaimer h2 {
+      display: flex; align-items: center; gap: 10px; color: #ff9a9a;
+      font-size: 1.25rem; font-weight: 700; margin-bottom: 22px;
+    }
+    .disclaimer b { color: #ffb4b4; }
+    .disclaimer ul { list-style: none; display: grid; gap: 16px; }
+    .disclaimer li {
+      display: flex; align-items: flex-start; gap: 14px; line-height: 1.6;
+      padding: 16px 18px; background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 14px;
+    }
+    .disclaimer li .num {
+      flex-shrink: 0; width: 28px; height: 28px; border-radius: 9px; display: grid; place-items: center;
+      font-size: 0.8rem; font-weight: 800; color: #1a1300;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+    }
+    .disclaimer .note {
+      margin-top: 22px; padding: 18px 20px; border-radius: 14px;
+      background: rgba(247,181,0,0.06); border: 1px solid rgba(247,181,0,0.2); color: var(--text); line-height: 1.6;
+    }
+    .disclaimer .note b { color: var(--brand-2); }
+
+    .back-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 28px; color: var(--brand); font-weight: 600; font-size: 0.92rem; }
+    .back-link:hover { color: var(--brand-2); }
+
+    /* ===== Footer ===== */
+    footer { border-top: 1px solid var(--border); padding: 34px 0; background: var(--bg-2); }
+    .copyright { text-align: center; color: var(--muted); font-size: 0.82rem; }
+  </style>
+</head>
+<body>
+  <div class="glow"></div>
+
+  <!-- ===== Navbar ===== -->
+  <header>
+    <nav>
+      <a href="index.html" class="logo"><img src="assets/logo.jpg" alt="Krishna Crypto logo" /></a>
+      <a href="index.html" class="btn btn-primary">← Back to Home</a>
+    </nav>
+  </header>
+
+  <!-- ===== Page head ===== -->
+  <div class="container page-head">
+    <div class="eyebrow">Transparency First</div>
+    <h1>Disclaimer</h1>
+    <p>Krishna Crypto is a purely educational community. Please read the terms below carefully before using this platform.</p>
+    <span class="updated">Last updated: July 2026</span>
+  </div>
+
+  <!-- ===== Disclaimer content ===== -->
+  <div class="container disclaimer-wrap">
+    <div class="disclaimer">
+      <h2>⚠️ Please Read Carefully</h2>
+      <ul>
+        <li><span class="num">1</span><span>This website is not a part of Facebook™, Meta™, or any other social platform and is <b>not</b> endorsed by them in any way.</span></li>
+        <li><span class="num">2</span><span>This platform is created for educational and informational purposes only. All content is intended to help users understand market concepts, awareness, and learning.</span></li>
+        <li><span class="num">3</span><span>We do <b>not</b> provide investment advice, trading recommendations, buy/sell signals, or portfolio management services.</span></li>
+        <li><span class="num">4</span><span>We do <b>not</b> guarantee any outcomes, profits, or financial results. Any examples or discussions are for learning purposes only.</span></li>
+        <li><span class="num">5</span><span>Financial markets, including crypto and gold, involve risk. Users should conduct their own research and make independent decisions.</span></li>
+        <li><span class="num">6</span><span>Users are encouraged to apply knowledge responsibly. Any actions taken based on the information provided are at the user’s own discretion.</span></li>
+        <li><span class="num">7</span><span>External links (such as Telegram or other platforms) are provided only for learning and informational access. We are not responsible for third-party content or practices.</span></li>
+      </ul>
+      <div class="note"><b>Note:</b> Krishna Crypto is <b>not</b> a SEBI-registered investment advisor. Past performance is not indicative of future results. Always consult a qualified financial advisor before investing.</div>
+    </div>
+    <a href="index.html" class="back-link">← Back to Home</a>
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="container">
+      <div class="copyright">© 2026 Krishna Crypto. All rights reserved. • For educational purposes only.</div>
+    </div>
+  </footer>
+</body>
+</html>

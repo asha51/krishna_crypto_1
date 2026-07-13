@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishna Crypto | Free Financial Education in Hindi</title>
+  <meta name="description" content="Krishna Crypto — Learn financial markets, crypto & trading psychology in Hindi. 100% Free. No tips, no signals — only genuine education for all of India." />
+  <!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1533015264987720');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1533015264987720&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0a0e17;
+      --bg-2: #10162a;
+      --card: #141b2e;
+      --card-hover: #1a2340;
+      --border: rgba(255, 255, 255, 0.08);
+      --text: #eef2ff;
+      --muted: #9aa6c4;
+      --brand: #f7b500;
+      --brand-2: #ffd54a;
+      --accent: #6c5ce7;
+      --accent-2: #00d1b2;
+      --green: #22c55e;
+      --red: #ef4444;
+      --radius: 18px;
+      --shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Poppins', 'Noto Sans Devanagari', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    .guj { font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; }
+
+    a { text-decoration: none; color: inherit; }
+
+    .container { width: 100%; max-width: 1140px; margin: 0 auto; padding: 0 22px; }
+
+    /* ===== Background glow ===== */
+    .glow {
+      position: fixed; inset: 0; z-index: -1; pointer-events: none;
+      background:
+        radial-gradient(600px 400px at 15% 5%, rgba(108, 92, 231, 0.18), transparent 60%),
+        radial-gradient(700px 500px at 90% 10%, rgba(247, 181, 0, 0.14), transparent 60%),
+        radial-gradient(600px 600px at 50% 100%, rgba(0, 209, 178, 0.10), transparent 60%);
+    }
+
+    /* ===== Navbar ===== */
+    header {
+      position: sticky; top: 0; z-index: 50;
+      backdrop-filter: blur(14px);
+      background: rgba(10, 14, 23, 0.72);
+      border-bottom: 1px solid var(--border);
+    }
+    nav { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+    .logo { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.15rem; letter-spacing: 0.3px; }
+    .logo img {
+      height: 42px; width: auto; border-radius: 10px; display: block;
+      background: #fff; padding: 3px; box-shadow: 0 6px 20px rgba(247, 181, 0, 0.25);
+    }
+    .logo b { color: var(--brand); }
+    .nav-links { display: flex; gap: 28px; font-size: 0.94rem; color: var(--muted); }
+    .nav-links a:hover { color: var(--text); }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 22px; border-radius: 999px; font-weight: 600; font-size: 0.95rem;
+      cursor: pointer; border: none; transition: transform .18s ease, box-shadow .18s ease;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color: #1a1300; box-shadow: 0 10px 30px rgba(247, 181, 0, 0.35);
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 40px rgba(247, 181, 0, 0.5); }
+    .btn-ghost { background: rgba(255,255,255,0.06); color: var(--text); border: 1px solid var(--border); }
+    .btn-ghost:hover { background: rgba(255,255,255,0.12); }
+    .nav-cta { display: none; }
+    @media (min-width: 720px) { .nav-cta { display: inline-flex; } }
+
+    /* ===== Hero ===== */
+    .hero { padding: 70px 0 40px; }
+    .hero-grid { display: grid; gap: 46px; align-items: center; }
+    @media (min-width: 900px) { .hero-grid { grid-template-columns: 1.15fr 0.85fr; } }
+
+    .pill {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 7px 15px; border-radius: 999px; font-size: 0.82rem; font-weight: 500;
+      background: rgba(0, 209, 178, 0.12); color: var(--accent-2);
+      border: 1px solid rgba(0, 209, 178, 0.3); margin-bottom: 22px;
+    }
+    .hero h1 { font-size: clamp(2.1rem, 5vw, 3.4rem); line-height: 1.15; font-weight: 800; letter-spacing: -0.5px; }
+    .hero h1 .hl { color: var(--brand); }
+    .hero p.sub { color: var(--muted); font-size: 1.08rem; margin: 20px 0 30px; max-width: 540px; }
+    .hero-cta { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+    .hero-note { color: var(--muted); font-size: 0.85rem; margin-top: 18px; display: flex; align-items: center; gap: 8px; }
+
+    .stats { display: flex; gap: 30px; margin-top: 40px; flex-wrap: wrap; }
+    .stat .num { font-size: 1.7rem; font-weight: 800; color: var(--text); }
+    .stat .lbl { font-size: 0.82rem; color: var(--muted); }
+
+    /* ===== Educator card ===== */
+    .edu-card {
+      background: linear-gradient(160deg, var(--card), var(--bg-2));
+      border: 1px solid var(--border); border-radius: 24px; padding: 30px;
+      box-shadow: var(--shadow); position: relative; overflow: hidden;
+    }
+    .edu-card::before {
+      content: ""; position: absolute; top: -60px; right: -60px; width: 180px; height: 180px;
+      background: radial-gradient(circle, rgba(247,181,0,0.25), transparent 70%); border-radius: 50%;
+    }
+    .edu-head { display: flex; align-items: center; gap: 16px; margin-bottom: 18px; }
+    .avatar {
+      position: relative; flex-shrink: 0;
+      width: 84px; height: 84px; border-radius: 20px; display: grid; place-items: center;
+      overflow: hidden; background: #fff; padding: 6px;
+      box-shadow: 0 10px 30px rgba(247, 181, 0, 0.35);
+    }
+    .avatar img { width: 100%; height: 100%; object-fit: contain; }
+    .avatar .verified {
+      position: absolute; bottom: -6px; right: -6px; width: 26px; height: 26px;
+      border-radius: 50%; display: grid; place-items: center; font-size: 0.7rem; color: #fff;
+      background: linear-gradient(135deg, var(--accent-2), #04a88f);
+      border: 3px solid var(--card); box-shadow: 0 4px 12px rgba(0,209,178,0.4);
+    }
+    .edu-head-info { min-width: 0; }
+    .banner-showcase {
+      margin-top: 40px; border-radius: 20px; overflow: hidden;
+      border: 1px solid var(--border); box-shadow: var(--shadow);
+    }
+    .banner-showcase img { width: 100%; height: auto; display: block; }
+    .edu-card h3 { font-size: 1.35rem; font-weight: 700; display: flex; align-items: center; gap: 8px; }
+    .edu-card .role { color: var(--brand); font-size: 0.9rem; font-weight: 500; }
+    .live-dot {
+      display: inline-flex; align-items: center; gap: 6px; margin-top: 6px;
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.4px; text-transform: uppercase; color: var(--green);
+    }
+    .live-dot i {
+      width: 7px; height: 7px; border-radius: 50%; background: var(--green);
+      box-shadow: 0 0 0 0 rgba(34,197,94,0.6); animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(34,197,94,0.55); }
+      70% { box-shadow: 0 0 0 8px rgba(34,197,94,0); }
+      100% { box-shadow: 0 0 0 0 rgba(34,197,94,0); }
+    }
+    .edu-quote {
+      font-size: 0.9rem; color: var(--text); font-style: italic; line-height: 1.55;
+      padding: 14px 16px; margin-bottom: 18px; border-radius: 12px;
+      background: rgba(247,181,0,0.06); border-left: 3px solid var(--brand);
+    }
+    .cred-list { display: grid; gap: 10px; }
+    .cred {
+      display: flex; align-items: center; gap: 12px; padding: 12px 14px;
+      background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: 12px;
+      transition: transform .18s ease, background .18s ease, border-color .18s ease;
+    }
+    .cred:hover { transform: translateX(4px); background: rgba(255,255,255,0.07); border-color: rgba(247,181,0,0.3); }
+    .cred .ico {
+      flex-shrink: 0; width: 38px; height: 38px; border-radius: 10px; display: grid; place-items: center;
+      font-size: 1.15rem; background: rgba(247,181,0,0.12); border: 1px solid rgba(247,181,0,0.22);
+    }
+    .cred b { display: block; font-size: 0.92rem; }
+    .cred span { font-size: 0.8rem; color: var(--muted); }
+
+    /* ===== Marquee badges ===== */
+    .badge-strip { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 18px 0; margin-top: 40px; background: rgba(255,255,255,0.02); }
+    .badges { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px;
+      border-radius: 999px; font-size: 0.86rem; font-weight: 500;
+      background: rgba(255,255,255,0.05); border: 1px solid var(--border); color: var(--muted);
+    }
+    .badge .ico { font-size: 1rem; }
+
+    /* ===== Section base ===== */
+    section { padding: 72px 0; }
+    .sec-head { text-align: center; max-width: 640px; margin: 0 auto 46px; }
+    .sec-head .eyebrow { color: var(--accent-2); font-weight: 600; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase; }
+    .sec-head h2 { font-size: clamp(1.7rem, 4vw, 2.5rem); font-weight: 800; margin: 10px 0 12px; letter-spacing: -0.5px; }
+    .sec-head p { color: var(--muted); }
+
+    /* ===== Feature grid ===== */
+    .grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .feature {
+      background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 26px 24px; transition: transform .2s ease, border-color .2s ease, background .2s ease;
+    }
+    .feature:hover { transform: translateY(-4px); border-color: rgba(247,181,0,0.4); background: var(--card-hover); }
+    .feature .ficon {
+      width: 52px; height: 52px; border-radius: 14px; display: grid; place-items: center;
+      font-size: 1.5rem; margin-bottom: 16px; background: rgba(247,181,0,0.12); border: 1px solid rgba(247,181,0,0.25);
+    }
+    .feature h4 { font-size: 1.1rem; font-weight: 600; margin-bottom: 8px; }
+    .feature p { color: var(--muted); font-size: 0.92rem; }
+
+    /* ===== Commitment / two-column ===== */
+    .split { display: grid; gap: 24px; grid-template-columns: 1fr; }
+    @media (min-width: 860px) { .split { grid-template-columns: 1fr 1fr; } }
+    .panel { border-radius: var(--radius); padding: 30px; border: 1px solid var(--border); }
+    .panel.yes { background: linear-gradient(160deg, rgba(34,197,94,0.08), var(--card)); border-color: rgba(34,197,94,0.25); }
+    .panel.no { background: linear-gradient(160deg, rgba(239,68,68,0.08), var(--card)); border-color: rgba(239,68,68,0.22); }
+    .panel h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+    .panel ul { list-style: none; display: grid; gap: 14px; }
+    .panel li { display: flex; align-items: flex-start; gap: 12px; font-size: 0.98rem; }
+    .panel li .tick { flex-shrink: 0; width: 24px; height: 24px; border-radius: 7px; display: grid; place-items: center; font-size: 0.85rem; font-weight: 700; }
+    .yes li .tick { background: rgba(34,197,94,0.2); color: var(--green); }
+    .no li .tick { background: rgba(239,68,68,0.2); color: var(--red); }
+    .no li span.txt { color: var(--muted); }
+
+    /* ===== Steps ===== */
+    .steps { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+    .step { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px; position: relative; }
+    .step .n {
+      width: 42px; height: 42px; border-radius: 12px; display: grid; place-items: center; font-weight: 800; font-size: 1.1rem;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #1a1300; margin-bottom: 16px;
+    }
+    .step h4 { font-size: 1.08rem; margin-bottom: 6px; }
+    .step p { color: var(--muted); font-size: 0.9rem; }
+
+    /* ===== CTA band ===== */
+    .cta-band {
+      text-align: center; border-radius: 28px; padding: 56px 30px; margin: 20px 0;
+      background: linear-gradient(135deg, rgba(108,92,231,0.18), rgba(247,181,0,0.14));
+      border: 1px solid var(--border); position: relative; overflow: hidden;
+    }
+    .cta-band h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 800; margin-bottom: 12px; }
+    .cta-band p { color: var(--muted); max-width: 520px; margin: 0 auto 28px; }
+
+    /* ===== Disclaimer ===== */
+    .disclaimer {
+      background: rgba(239,68,68,0.06); border: 1px solid rgba(239,68,68,0.2);
+      border-radius: var(--radius); padding: 26px; font-size: 0.86rem; color: var(--muted); margin-top: 30px;
+    }
+    .disclaimer b { color: #ff9a9a; }
+    .disclaimer h4 {
+      display: flex; align-items: center; gap: 8px; color: #ff9a9a;
+      font-size: 1rem; font-weight: 700; margin-bottom: 14px;
+    }
+    .disclaimer ul { list-style: none; display: grid; gap: 10px; }
+    .disclaimer li { display: flex; align-items: flex-start; gap: 10px; line-height: 1.55; }
+    .disclaimer li::before { content: "•"; color: var(--red); font-weight: 700; flex-shrink: 0; }
+    .disclaimer .note { margin-top: 14px; padding-top: 14px; border-top: 1px solid rgba(239,68,68,0.18); }
+
+    /* ===== Footer ===== */
+    footer { border-top: 1px solid var(--border); padding: 44px 0 30px; background: var(--bg-2); }
+    .foot-grid { display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: flex-start; }
+    .foot-links { display: flex; flex-wrap: wrap; gap: 22px; font-size: 0.9rem; color: var(--muted); }
+    .foot-links a:hover { color: var(--text); }
+    .copyright { text-align: center; color: var(--muted); font-size: 0.82rem; margin-top: 30px; padding-top: 22px; border-top: 1px solid var(--border); }
+
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+  </style>
+</head>
+<body>
+  <div class="glow"></div>
+
+  <!-- ===== Navbar ===== -->
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#" class="logo"><img src="assets/logo.jpg" alt="Krishna Crypto logo" /></a>
+        <div class="nav-links">
+          <a href="#learn">What You'll Learn</a>
+          <a href="#inside">Community</a>
+          <a href="#commitment">Our Promise</a>
+          <a href="#join">Join</a>
+        </div>
+        <a href="https://t.me/+6boe28m7wyRjYTQ1" target="_blank" rel="noopener" class="btn btn-primary nav-cta">Join Free →</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="reveal">
+        <span class="pill">⚡ India's Fastest-Growing Free Financial Learning Community</span>
+        <h1>Learn <span class="hl guj">Financial Markets & Crypto</span> in <span class="guj">हिंदी</span> — <span class="hl">100% Free</span></h1>
+        <p class="sub guj">Complex financial markets को simple भाषा में समझें. Charts, crypto, risk management और trading psychology — सब कुछ हिंदी में, बिना किसी fees के.</p>
+        <div class="hero-cta">
+          <a href="https://t.me/+6boe28m7wyRjYTQ1" target="_blank" rel="noopener" class="btn btn-primary">Join Free Learning Community →</a>
+          <a href="#learn" class="btn btn-ghost">See What's Inside</a>
+        </div>
+        <p class="hero-note">🔒 No registration • No credit card • No hidden charges — ever.</p>
+
+        <div class="stats">
+          <div class="stat"><div class="num">10,000+</div><div class="lbl">Active Learners</div></div>
+          <div class="stat"><div class="num">6+ Yrs</div><div class="lbl">Market Experience</div></div>
+          <div class="stat"><div class="num">₹0</div><div class="lbl">Cost — Always Free</div></div>
+        </div>
+      </div>
+
+      <div class="edu-card reveal">
+        <div class="edu-head">
+          <div class="avatar">
+            <img src="assets/logo.jpg" alt="Krishna Crypto" />
+            <span class="verified" title="Trusted Educator">✓</span>
+          </div>
+          <div class="edu-head-info">
+            <h3>Krishna Crypto</h3>
+            <div class="role">Market Educator &amp; Mentor</div>
+            <div class="live-dot"><i></i> Live Daily</div>
+          </div>
+        </div>
+        <p class="edu-quote guj">“मेरा एक ही मकसद है — हर Hindi learner markets को सही और simple तरीके से समझे. No tips, no shortcuts — सिर्फ genuine education.”</p>
+        <div class="cred-list">
+          <div class="cred"><span class="ico">🏆</span><div><b>Experienced Market Educator</b><span>Teaching markets the right way</span></div></div>
+          <div class="cred"><span class="ico">📅</span><div><b>6+ Years of Experience</b><span>Live markets, charts &amp; analysis</span></div></div>
+          <div class="cred"><span class="ico">👥</span><div><b>10,000+ Hindi Learners</b><span>A trusted, growing community</span></div></div>
+          <div class="cred"><span class="ico">🎓</span><div><b>100% Free — No Hidden Agenda</b><span>Pure education, no selling</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="banner-showcase reveal">
+        <img src="assets/banner.jpg" alt="Krishna Crypto — Daily Live" />
+      </div>
+    </div>
+
+    <div class="badge-strip">
+      <div class="container badges">
+        <span class="badge"><span class="ico">✅</span> Trusted Educator</span>
+        <span class="badge"><span class="ico">👥</span> 10,000+ Learners</span>
+        <span class="badge"><span class="ico">🗣️</span> In Hindi</span>
+        <span class="badge"><span class="ico">🆓</span> Always Free</span>
+        <span class="badge"><span class="ico">🚫</span> No Tips / No Signals</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== What You'll Learn ===== -->
+  <section id="learn">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div class="eyebrow">What You'll Learn</div>
+        <h2>Real Education, <span class="guj">सच्ची समझ</span></h2>
+        <p class="guj">Markets को genuinely समझने के लिए जो चाहिए — सब कुछ एक ही जगह, हिंदी में.</p>
+      </div>
+      <div class="grid">
+        <div class="feature reveal"><div class="ficon">📚</div><h4>Financial Concepts</h4><p class="guj">Complex financial ideas को simple हिंदी भाषा में समझाया गया.</p></div>
+        <div class="feature reveal"><div class="ficon">📊</div><h4>Daily Market Updates</h4><p class="guj">रोज़ाना market क्या कहता है — clear और jargon-free updates.</p></div>
+        <div class="feature reveal"><div class="ficon">📈</div><h4>Chart Analysis</h4><p class="guj">Charts कैसे पढ़ें — patterns, trends और levels.</p></div>
+        <div class="feature reveal"><div class="ficon">🪙</div><h4>Crypto Basics</h4><p class="guj">Crypto, blockchain और risks को सही तरीके से समझें.</p></div>
+        <div class="feature reveal"><div class="ficon">🧠</div><h4>Risk & Psychology</h4><p class="guj">Risk management और trading psychology — capital को बचाएं.</p></div>
+        <div class="feature reveal"><div class="ficon">📰</div><h4>Market News Sense</h4><p class="guj">News को interpret करना सीखें — noise और signal का फर्क.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Inside community ===== -->
+  <section id="inside" style="background: var(--bg-2);">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div class="eyebrow">Inside The Community</div>
+        <h2 class="guj">Community के अंदर क्या मिलेगा?</h2>
+        <p>A supportive, spam-free space to learn, ask questions, and grow together.</p>
+      </div>
+      <div class="grid">
+        <div class="feature reveal"><div class="ficon">💬</div><h4>Daily Discussions</h4><p class="guj">Live market चर्चा और doubts का solution — रोज़ाना.</p></div>
+        <div class="feature reveal"><div class="ficon">🤝</div><h4>Learning Community</h4><p class="guj">10,000+ Hindi learners के साथ मिलकर सीखें.</p></div>
+        <div class="feature reveal"><div class="ficon">🎥</div><h4>Concept Breakdowns</h4><p class="guj">Simple examples से concepts को step-by-step समझें.</p></div>
+        <div class="feature reveal"><div class="ficon">⏰</div><h4>Timely Alerts (Educational)</h4><p class="guj">Important market events की awareness — learning purpose के लिए.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Commitment ===== -->
+  <section id="commitment">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div class="eyebrow">Our Commitment</div>
+        <h2>What We <span style="color:var(--green)">Do</span> &amp; <span style="color:var(--red)">Don't</span> Offer</h2>
+        <p>Transparency first. Krishna Crypto is a pure education community — nothing more, nothing hidden.</p>
+      </div>
+      <div class="split">
+        <div class="panel yes reveal">
+          <h3>✅ What You Get</h3>
+          <ul>
+            <li><span class="tick">✓</span><span>Genuine financial education in Gujarati</span></li>
+            <li><span class="tick">✓</span><span>Chart & concept explanations you can actually follow</span></li>
+            <li><span class="tick">✓</span><span>Risk awareness & disciplined thinking</span></li>
+            <li><span class="tick">✓</span><span>A friendly, spam-free learning community</span></li>
+          </ul>
+        </div>
+        <div class="panel no reveal">
+          <h3 class="guj">🚫 इस Community में नहीं मिलेगा</h3>
+          <ul>
+            <li><span class="tick">✗</span><span class="txt">No Buy / Sell Signals</span></li>
+            <li><span class="tick">✗</span><span class="txt">No Tips or Recommendations</span></li>
+            <li><span class="tick">✗</span><span class="txt">No Paid Subscriptions</span></li>
+            <li><span class="tick">✗</span><span class="txt">No Unrealistic Profit Promises</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Steps ===== -->
+  <section style="background: var(--bg-2);">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div class="eyebrow">Get Started</div>
+        <h2>Join in 3 Simple Steps</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><div class="n">1</div><h4>Tap Join</h4><p class="guj">नीचे "Join Free" button पर click करें.</p></div>
+        <div class="step reveal"><div class="n">2</div><h4>Enter the Community</h4><p class="guj">Telegram/WhatsApp community में add हों — instantly.</p></div>
+        <div class="step reveal"><div class="n">3</div><h4>Start Learning</h4><p class="guj">रोज़ सीखें, doubts पूछें और grow करें — free में.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section id="join">
+    <div class="container">
+      <div class="cta-band reveal">
+        <span class="pill">🚀 10,000+ Hindi Learners Already Inside</span>
+        <h2 class="guj">Abhi Join करें — It's 100% Free</h2>
+        <p class="guj">कोई fees नहीं, कोई registration नहीं. बस join करें और आज से ही सीखना शुरू करें.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:14px; justify-content:center;">
+          <a href="https://t.me/+6boe28m7wyRjYTQ1" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:1.05rem; padding:16px 32px;">✈️ Join on Telegram →</a>
+          <a href="https://wa.me/919106505844" target="_blank" rel="noopener" class="btn btn-ghost" style="font-size:1.05rem; padding:16px 32px;">💬 Chat on WhatsApp</a>
+        </div>
+        <p class="hero-note" style="justify-content:center;">✈️ Telegram Community &nbsp;•&nbsp; 💬 WhatsApp +91 9106505844</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="container">
+      <div class="foot-grid">
+        <div>
+          <a href="#" class="logo" style="font-size:1.1rem;"><img src="assets/logo.jpg" alt="Krishna Crypto logo" /></a>
+          <p style="color:var(--muted); font-size:0.88rem; margin-top:10px; max-width:320px;">Free financial &amp; crypto education in Hindi, for all of India. Learn the right way — no tips, no signals, only knowledge.</p>
+        </div>
+        <div class="foot-links">
+          <a href="#learn">What You'll Learn</a>
+          <a href="#inside">Community</a>
+          <a href="#commitment">Our Promise</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+      <div class="copyright">© 2026 Krishna Crypto. All rights reserved. • For educational purposes only.</div>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll reveal
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+  </script>
+</body>
+</html>
